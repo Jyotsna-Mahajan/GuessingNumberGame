@@ -1,0 +1,182 @@
+body {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    height: auto; /* Adjusts height dynamically */
+    box-shadow: 0 4px 8px black;
+    text-align: center; /* Align content in the center */
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    
+}
+
+
+.box:hover {
+    box-shadow: 0 8px 16px goldenrod;
+}
+
+.input {
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 320px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+
+}
+
+.input label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.input input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    
+}
+
+
+
+
+
+.Quit {
+    background-color: #dc3545; /* Red color for Quit button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9;
+    margin-left: 10px;
+}
+
+.Quit:hover{
+    box-shadow: 0 4px 8px black;
+}
+.PlayAgain {
+    background-color: #007bff; /* Blue color for Play Again button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9;
+    margin-left: 20px;
+}
+.PlayAgain:hover{
+    box-shadow: 0 4px 8px black;
+}
+
+.btn {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    
+}
+
+.Enter{
+    background-color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9;
+    width:100px;
+    
+    
+}
+
+.Enter:hover{
+    box-shadow: 0 4px 8px black;
+}
+
+.btn1{
+    display: flex;
+    justify-content: center;
+}
+
+.Guess{
+    background-color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9;
+    width:100px;
+}
+
+.Guess:hover{
+    box-shadow: 0 4px 8px black;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/*  Media Query for Mobile Screens (max-width: 600px) */
+@media (max-width: 600px) {
+    .box {
+        width: 90%; /* Make box smaller on small screens */
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* Centers buttons */
+        gap: 20px; /* Adds space between Quit and Play Again */
+        margin-top: 10px; /* Adjust spacing above buttons */
+    }
+
+    button{
+        width:80%;
+    }
+    
+}
+
